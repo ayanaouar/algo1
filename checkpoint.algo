@@ -1,0 +1,33 @@
+VAR
+    set_declarations
+BEGIN
+    set_instructions
+END
+VAR
+sentence,i,lenSen,numWord,numVow :
+    sentence:STRING;
+    len:INTEGER :=0;
+    word:INTEGER :=0;
+    voy:INTEGER :=0;
+BEGIN
+Read(sentence) ;
+FOR i FROM 0 TO sentence.length -2
+ DO
+    IF ( sentence[i] = " " )
+ 
+
+  THEN
+  word=word+1
+END_IF
+
+
+IF (sentence [i]  = "a" or "e" or "i" or "o" or "u" or "y")
+THEN 
+voy=voy+1;
+END_IF
+IF  ( sentence [i] <> " " ) 
+THEN
+len=len+1 
+END IF 
+END FOR
+END
